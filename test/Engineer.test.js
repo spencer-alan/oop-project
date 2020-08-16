@@ -1,7 +1,6 @@
 const Engineer = require("../lib/Engineer");
-const Employee = require("../lib/Employee");
 
-test("Can set GitHUb account via constructor", () => {
+test("Can set GitHub username via constructor", () => {
   const testValue = "GitHubUser";
   const e = new Engineer("Foo", 1, "test@test.com", testValue);
   expect(e.github).toBe(testValue);
